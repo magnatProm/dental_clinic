@@ -1,0 +1,28 @@
+.modal{
+    background: var(--background__dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__dialog{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__content{
+        max-height: 91vh;
+        overflow-y: scroll;
+    }
+    &__content::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+.hide {
+    display: none;
+}

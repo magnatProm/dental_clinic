@@ -1,157 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/null.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script src="js/Object.js"></script>
+    <script defer src="js/js.js"></script>
 </head>
+
 <body>
     <main class="wrapper">
-        <section class="grid">
-            <div class="grid_box_max"><img src="img/Rectangle 10.png" alt="promo"></div>
-            <div>
+        <header class="header">
+            <nav class="nav wrapper">
+                <img src="img/logo.png" alt="logo">
+                <input type="checkbox" class="nav__btn-menu" id="nav">
+                <label class="nav_shadow" for="nav">x</label>
+
+                <ul class="ul nav__list nav__position">
+                    <button class="button_main">оставить заявку</button>
+                    <li data-header="пациэнтам" class="nav__item">пациэнтам</li>
+                    <li data-header="о клиниках" class="nav__item">о клиниках</li>
+                    <li data-header="услуги" class="nav__item">услуги</li>
+                    <li data-header="наши работы" class="nav__item">наши работы</li>
+                    <li data-header="цены" class="nav__item">цены</li>
+                    <li class="nav__item">0</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="grid_1">
+            <div class="grid_1_box_max"><img src="img/Rectangle 10.png" alt="promo"></div>
+            <div class="text flex_text">
                 <p>позвоните</p>
                 <ul class="ul">
-                <li><a href="tel:+#">+ 8 (383) 312 21 18</a></li>
-                <li><a href="tel:+#">+ 8 (383) 312 21 18</a></li>
+                    <li><a href="tel:+#">+ 8 (383) 312 21 18</a></li>
+                    <li><a href="tel:+#">+ 8 (383) 312 21 18</a></li>
                 </ul>
-                <button class="border_main">заказать звонок</button>
+                <button class="border_main" data-modal>заказать звонок</button>
             </div>
-            <div>
-                    <p>соцсети</p>
-                    <img src="img/label/Vice.png" alt="22">
-                    <p>место положение</p>
-                    <ul class="ul">
-                       <li><a href="#">ул. Ленина 12 8:30 - 21:00</a></li>
-                       <li><a href="#">пр-т Дзержинского 1/1 8:00 - 20:30</a></li>
-                    </ul>
+            <div class="grid_1_box_item flex_text">
+                <a class="button_circle" href="#"><img src="img/icons/icon-vk.svg" alt="icon"></a>
+                <a class="button_circle" href="#"><img src="img/icons/icon-vk.svg" alt="icon"></a>
+            </div>
+            <div class="text">
+                <p>место положение</p>
+                <ul class="ul">
+                    <li><a href="#">ул. Ленина 12 8:30 - 21:00</a></li>
+                    <li><a href="#">пр-т Дзержинского 1/1 8:00 - 20:30</a></li>
+                </ul>
             </div>
         </section>
 
-        <section class="grid technologies">
-            <div class="grid_box_max">
-                <img src="img/image 8.png" alt="promo">
-                <p>3D ТОМОГРАФИЯ</p></div>
-            <div>
-                <img src="img/image 9.png" alt="promo">
-                <p><span>ЛЕЧЕНИЕ</span> БЕЗ СВЕРЛЕНИЯ</p></div>
-            <div>
-                <img src="img/DSC_2150_3 2.png" alt="promo">
-                <p>СТОМАТОЛОГИЧЕСКИЙ <span>МИКРОСКОП</span></p></div>
-        </section>
-
-        <section class="services">
-             <figure class="services__blokc">
-                <div class="services__img">
-                    <img src="img/fon1.png" alt="img">
-                    <img class="services__img_1" src="img/Rectangle 116.png" alt="img">
-                 </div>
-                <figcaption class="services__text">
-                    <p>лечим во сне</p>
-                   <p>лечим спомощью наркоза</p>
-                </figcaption>
-            </figure>
-             <figure class="services__blokc">
-                <div class="services__img">
-                    <img src="img/fon1.png" alt="img">
-                    <img class="services__img_1" src="img/Rectangle 116.png" alt="img">
-                 </div>
-                <figcaption class="services__text">
-                    <p>лечим во сне</p>
-                   <p>лечим спомощью наркоза</p>
-                </figcaption>
-            </figure>
-             <figure class="services__blokc">
-                <div class="services__img">
-                    <img src="img/fon1.png" alt="img">
-                    <img class="services__img_1" src="img/Rectangle 116.png" alt="img">
-                 </div>
-                <figcaption class="services__text">
-                    <p>лечим во сне</p>
-                   <p>лечим спомощью наркоза</p>
-                </figcaption>
-            </figure>
-             <figure class="services__blokc">
-                <div class="services__img">
-                    <img src="img/fon1.png" alt="img">
-                    <img class="services__img_1" src="img/Rectangle 116.png" alt="img">
-                 </div>
-                <figcaption class="services__text">
-                    <p>лечим во сне</p>
-                   <p>лечим спомощью наркоза</p>
-                </figcaption>
-            </figure>
-             <figure class="services__blokc">
-                <div class="services__img">
-                    <img src="img/fon1.png" alt="img">
-                    <img class="services__img_1" src="img/Rectangle 116.png" alt="img">
-                 </div>
-                <figcaption class="services__text">
-                    <p>лечим во сне</p>
-                   <p>лечим спомощью наркоза</p>
-                </figcaption>
-            </figure>
-        </section>
-
-        <section class="grid">
-            <div class="grid_box_max"><img src="img/Rectangle 10.png" alt="promo"></div>
-            <div>
-                <p>21 год работы</p>
-                <p>5 лет гарантии на лечение</p>
-                <p>40 000 успешных  имплантаций</p>
-            </div>
-            <div>
-                <p>клиника</p>
-                <fieldset class="fieldset">
+        <section>
+            <div class="headline_block">
+                <fieldset class="fieldset assistance__slider">
                     <label>
-                       <input type="radio" name="origin">
-                       <span>пр-т Дзержинского 1/1</span>
+                        <input type="radio" name="assistance_slider">
+                        <span>Что вас беспокоит?</span>
                     </label>
                     <label>
-                        <input type="radio" name="origin">
-                        <span>Ленина 12</span>
+                        <input type="radio" name="assistance_slider">
+                        <span>все услуги</span>
                     </label>
                 </fieldset>
-                <fieldset class="fieldset">
+                <fieldset class="fieldset assistance__add">
                     <label>
-                       <input type="radio" name="origin2">
-                       <span>снаружи</span>
+                        <input type="radio" name="assistance_btn">
+                        <span>скидки %</span>
                     </label>
                     <label>
-                        <input type="radio" name="origin2">
-                        <span>внутри</span>
+                        <input type="radio" name="assistance_btn">
+                        <span>цены</span>
                     </label>
                 </fieldset>
+            </div>
 
-                <button class="button">больше о клинике</button>
+            <div class="assistance">
+                <div class="assistance__inner_1">
+                    <div class="assistance__block">
+                        <input type="radio" name="assistance">
+                        <img src="img/icons/assistance_1.png" alt="img">
+                        <p>Мне больше 50лет</p>
+                        <ul class="ul">
+                            <li><a href="#" data-price="200" data-discount="48">Записаться на диагностику</a></li>
+                            <li><a href="#" data-price="280" data-discount="">Лечение для пожелых</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="assistance__block">
+                        <input type="radio" name="assistance">
+                        <p>Десны</p>
+                        <ul class="ul">
+                            <li><a href="#" data-price="1000" data-discount="">Кровоточивость десен</a></li>
+                            <li><a href="#" data-price="900" data-discount="10">Боль в области десен</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="assistance__block">
+                        <input type="radio" name="assistance">
+                        <p>Гигиена и отбеливание</p>
+                        <ul class="ul">
+                            <li><a href="#" data-price="780" data-discount="8">Налет на зубах</a></li>
+                            <li><a href="#" data-price="2000" data-discount="67">Запах изо рта</a></li>
+                            <li><a href="#" data-price="800" data-discount="">Желтый налет на зубах</a></li>
+                        </ul>
+                    </div><div class="assistance__block">
+                        <input type="radio" name="assistance">
+                        <img src="img/icons/assistance_3.png" alt="img">
+                        <p>Будущая мать</p>
+                        <ul class="ul">
+                            <li><a href="#" data-price="200" data-discount="">Записаться на диагностику</a></li>
+                            <li><a href="#" data-price="200" data-discount="">Лечение беременных</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="assistance__block assistance__block_max">
+                        <input type="radio" name="assistance">
+                        <p>Эстетика</p>
+                        <ul class="ul">
+                            <li><a href="#" data-price="11000" data-discount="44">Отбелование зубов</a></li>
+                            <li><a href="#" data-price="1000" data-discount="">Отсутсвует зуб</a></li>
+                            <li><a href="#" data-price="800" data-discount="67">Откололся зуб</a></li>
+                            <li><a href="#" data-price="9000" data-discount="">Неправильный прикус</a></li>
+                            <li><a href="#" data-price="4000" data-discount="">Запах изо рта</a></li>
+                            <li><a href="#" data-price="3000" data-discount="">Желтый налет на зубах</a></li>
+                            <li><a href="#" data-price="700" data-discount="5">Профилактический осмотр</a></li>
+                        </ul>
+                    </div><div class="assistance__block assistance__block_max">
+                        <input type="radio" name="assistance">
+                        <p>Зубы</p>
+                        <ul class="ul">
+                            <li><a href="#" data-price="780" data-discount="">Кариес</a></li>
+                            <li><a href="#" data-price="180" data-discount="50">Острая зубная боль</a></li>
+                            <li><a href="#" data-price="800" data-discount="">Слетела пломба</a></li>
+                            <li><a href="#" data-price="200" data-discount="5">Чувствительность зубов</a></li>
+                            <li><a href="#" data-price="560" data-discount="">Подвижность зуба</a></li>
+                            <li><a href="#" data-price="700" data-discount="">Развалился зуб</a></li>
+                        </ul>
+                    </div>
+                    <div class="assistance__block">
+                        <input type="radio" name="assistance">
+                        <img src="img/icons/assistance_2.png" alt="img">
+                        <p>У ребенка болит зуб</p>
+                        <ul class="ul">
+                            <li><a href="#" data-price="4000" data-discount="">Записаться на детский осмотр</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="assistance__inner_1 js_object"></div>
             </div>
         </section>
 
-        <section class="grid">
-            <div class="grid_box_max"><p>Почему мы?</p></div>
-            <div><p>Лицензии "ЦЕНТРА СТОМАТОЛОГИИ"</p><img src="img/Rectangle 10.png" alt="promo"></div>
-            <div><p>Партнеры</p></div>
+        <section>
+            <div class="headline_block">
+                <div>
+                    <p class="title">Врачи</p>
+                    <button class="button">все врачи</button>
+                </div>
+                <div>
+                    <button class="button_circle"><</button>
+                    <button class="button_circle">></button>
+                </div>
+            </div>
+
+            <div class="slider flex">
+            </div>
         </section>
 
-        <section class="grid">
-            <div><img src="img/Rectangle 10.png" alt="promo"></div>
-            <form class="contacts__form">
-                <p>ЗАПОЛНИТЕ ФОРМУ
-                    для  ЗАПИСИ на прием</p>
-                <input class="contacts__input" name="name" type="text" placeholder="Enter your name">
-                <input class="contacts__input" name="email" type="email" placeholder="Enter your e-mail">
+        <section>
+            <div class="headline_block">
+                <p class="title">Новейшии технологии</p>
+            </div>
+            <div class="grid_2 technologies">
+                <div class="grid_2_box_max">
+                    <img src="img/image 8.png" alt="promo">
+                    <p><b>3D</b> ТОМОГРАФИЯ</p>
+                </div>
+                <div>
+                    <img src="img/image 9.png" alt="promo">
+                    <p>ЛЕЧЕНИЕ <span>БЕЗ СВЕРЛЕНИЯ</span></p>
+                </div>
+                <div>
+                    <img src="img/DSC_2150_3 2.png" alt="promo">
+                    <p><span>СТОМАТОЛОГИЧЕСКИЙ</span> МИКРОСКОП</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="headline_block">
+                <p class="title">По мировым стандартам</p>
+            </div>
+            <div class="services">
+                <figure class="services__blokc">
+                    <div class="services__img">
+                        <img src="img/fon/fon_1.png" alt="img">
+                        <img class="services__img_1 services__person_1" src="img/fon/person_1.png" alt="img">
+                    </div>
+                    <figcaption class="services__text text">
+                        <p>лечим во сне</p>
+                        <p>лечим спомощью наркоза</p>
+                    </figcaption>
+                </figure>
+                <figure class="services__blokc">
+                    <div class="services__img">
+                        <img src="img/fon/fon_2.png" alt="img">
+                        <img class="services__img_1 services__person_2" src="img/fon/person_2.png" alt="img">
+                    </div>
+                    <figcaption class="services__text text">
+                        <p>лечим во сне</p>
+                        <p>лечим спомощью наркоза</p>
+                    </figcaption>
+                </figure>
+                <figure class="services__blokc">
+                    <div class="services__img">
+                        <img src="img/fon/fon_3.png" alt="img">
+                        <img class="services__img_1" src="img/fon/person_3.png" alt="img">
+                    </div>
+                    <figcaption class="services__text text">
+                        <p>лечим во сне</p>
+                        <p>лечим спомощью наркоза</p>
+                    </figcaption>
+                </figure>
+                <figure class="services__blokc">
+                    <div class="services__img">
+                        <img src="img/fon/fon_4.png" alt="img">
+                        <img class="services__img_1 services__person_3" src="img/fon/person_5.png" alt="img">
+                    </div>
+                    <figcaption class="services__text text">
+                        <p>лечим во сне</p>
+                        <p>лечим спомощью наркоза</p>
+                    </figcaption>
+                </figure>
+                <figure class="services__blokc">
+                    <div class="services__img">
+                        <img src="img/fon/fon_5.png" alt="img">
+                        <img class="services__img_1" src="img/fon/person_4.png" alt="img">
+                    </div>
+                    <figcaption class="services__text text">
+                        <p>лечим во сне</p>
+                        <p>лечим спомощью наркоза</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div class="headline_block">
+                <div>
+                    <p class="title">Работы</p>
+                    <button class="button">все работы</button>
+                </div>
+                <div>
+                    <button class="button_circle"><</button>
+                    <button class="button_circle">></button>
+                </div>
+            </div>
+
+            <div class="slider flex work__mous">
+            </div>
+        </section>
+
+        <section>
+            <div class="headline_block">
+                <p class="title">Стамотология</p>
+            </div>
+            <div class="grid_1 apartments">
+                <div class="grid_1_box_max"><img src="img/Rectangle 10.png" alt="promo"></div>
+                <div class="apartments_list">
+                    <p><span class="title">21</span> год работы</p>
+                    <p><span class="title">5</span> лет гарантии на лечение</p>
+                    <p><span class="title">40 000</span> успешных имплантаций</p>
+                </div>
+                <div class="text grid_1_box_item">
+                    <p>клиника</p>
+                    <fieldset class="fieldset">
+                        <label>
+                            <input type="radio" name="origin">
+                            <span>пр-т Дзержинского 1/1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="origin">
+                            <span>Ленина 12</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label>
+                            <input type="radio" name="origin2">
+                            <span>снаружи</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="origin2">
+                            <span>внутри</span>
+                        </label>
+                    </fieldset>
+                </div>
+                <button class="button" data-modal>больше о клинике</button>
+            </div>
+        </section>
+
+        <section class="grid_3 licenses">
+            <div class="grid_3_box_max licenses__row">
+                <p class="title">Почему мы?</p>
+
+                <div>
+                    <img src="img/icons/services_icon_2.png" alt="icon">
+                    <div class="text">
+                        <p>ОТСУТСТВИЕ ОЧЕРЕДЕЙ</p>
+                        <p>Принимаем всех пациентов в точно назначенное время</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/icons/services_icon_3.png" alt="icon">
+                    <div class="text">
+                        <p>ОТВЕЧАЕМ ЗА СВОЮ РАБОТУ</p>
+                        <p>Предоставляем гарантию на все виды услуг</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/icons/services_icon_1.png" alt="icon">
+                    <div class="text">
+                        <p>ГАРАНТИРОВАННАЯ БЕЗОПАСНОСТЬ</p>
+                        <p>Наша клиника строго придерживается
+                            всех требований санитарных норм.
+                            В работе используются одноразовые
+                            расходные материалы и 100%
+                            стерильный инструментарий</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="title">Лицензии "ЦЕНТРА СТОМАТОЛОГИИ"</p>
+                <div class="licenses__column">
+                    <img src="img/diplomas.png" alt="diplomas">
+                    <img src="img/diplomas.png" alt="diplomas">
+                    <img src="img/diplomas.png" alt="diplomas">
+                </div>
+            </div>
+            <div>
+                <p class="title">Партнеры</p>
+                <div class="licenses__partners">
+                    <marquee behavior="alternate">
+                        <img src="img/icons/services_icon_2.png" alt="icon">
+                        <img src="img/icons/services_icon_3.png" alt="icon">
+                        <img src="img/icons/services_icon_1.png" alt="icon">
+                        <img src="img/icons/services_icon_2.png" alt="icon">
+                        <img src="img/icons/services_icon_3.png" alt="icon">
+                        <img src="img/icons/services_icon_1.png" alt="icon">
+                        <img src="img/icons/services_icon_2.png" alt="icon">
+                        <img src="img/icons/services_icon_3.png" alt="icon">
+                        <img src="img/icons/services_icon_1.png" alt="icon">
+                    </marquee>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="headline_block">
+                <p class="title">Мы ждем вас</p>
+            </div>
+            <div class="flex result">
+                <div><img src="img/Rectangle 10.png" alt="promo"></div>
+
+                <form class="form">
+                    <p class="form__title"><span class="title">ЗАПОЛНИТЕ ФОРМУ</span>
+                        для ЗАПИСИ на прием</p>
+
+                    <div class="form__block">
+                        <p>Как Вас зовут</p>
+                        <input class="form__input" name="email" type="email" placeholder="имя">
+                    </div>
+                    <div class="form__block">
+                        <p>Номер телефона</p>
+                        <input class="form__input" name="phone" type="tel" maxlength="7"
+                            placeholder="+7 (xxx)-xxx-xx-xx">
+                    </div>
+
+                    <div class="form__block">
+                        <p>Адрес клиники</p>
+                        <fieldset class="fieldset">
+                            <label>
+                                <input type="radio" name="origin">
+                                <span>пр-т Дзержинского 1/1</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="origin">
+                                <span>Ленина 12</span>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="form__block form__block-max">
+                        <p>Защита от автоматического заполнения</p>
+                        <div class="form__info">
+                            <input type="checkbox" id="checkbox_box" name="checkbox_box">
+                            <label for="checkbox_box">я не робот</label>
+                        </div>
+                    </div>
+
+                    <button class="form__btn">оставить заявку</button>
+
+                    <p>
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a
+                            href="#">политикой конфиденциальности.</a>
+                    </p>
                 </form>
+            </div>
         </section>
 
-        <section class="grid">
-            <div><img src="img/Rectangle 10.png" alt="promo"></div>
-<div><p>Результат нашей работы складывается 
-    из нескольких важных составляющих:
-    </p></div>
+        <section>
+            <div class="headline_block">
+                <p class="title">Результат работы</p>
+            </div>
+            <div class="flex result">
+                <div>
+                    <!-- <img src="img/girl.png" alt="girl"> -->
+                    <picture class="nimbus">
+                    <source media="(min-width: 650px)" srcset="img/girl.png">
+                    <source media="(min-width: 450px)" srcset="img/girl.png 2x">
+                    <img src="img/girl.png" alt="img">
+                    </picture> 
+                    <!-- <div class="nimbus"></div> -->
+                </div>
+                <div class="text">
+                    <p>Результат нашей работы складывается
+                        из нескольких важных составляющих:
+                    </p>
+
+                    <div class="accordion">
+
+                        <div class="accordion__item flex">
+                            <input type="radio" name="accordion">
+                            <p class="accordion__title">Оснащение клиники современным импортным оборудованием</p>
+                            <p class="accordion__text">Мы прогрессивная стоматологическая клиника. Новосибирск — большой город, но наш Центр в нём один из немногих, где в стерилизационных используется 2 автоклава ведущих мировых производителей итальянской компании Euronda, прибор для чистки и смазки наконечников Cavo Quatro Care. Это дает уверенность в том, что Ваше лечение будет проведено чистыми стерильными, абсолюно не подвергающими опасности Ваше здоровье инструментами.</p>
+                        </div>
+                        <div class="accordion__item flex">
+                            <input type="radio" name="accordion">
+                            <p class="accordion__title">Первоклассный сервис</p>
+                            <p class="accordion__text">Созданы все условия для комфортного ожидания приема как для взрослых, так и для детей: оборудованная детская комната, зона отдыха, где Вам предложат чашечку кофе или чая, массажное кресло</p>
+                        </div>
+                        <div class="accordion__item flex">
+                            <input type="radio" name="accordion">
+                            <p class="accordion__title">Точность диагностики</p>
+                            <p class="accordion__text">С помощью самых современных технологий, таких как компьютерная томография, микроскоп, мы можем приблизить точность диагноза к 100%</p>
+                        </div>
+                        <div class="accordion__item flex">
+                            <input type="radio" name="accordion">
+                            <p class="accordion__title">Безопасность</p>
+                            <p class="accordion__text">Мы прогрессивная стоматологическая клиника. Новосибирск — большой город, но наш Центр в нём один из немногих, где в стерилизационных используется 2 автоклава ведущих мировых производителей итальянской компании Euronda, прибор для чистки и смазки наконечников Cavo Quatro Care. Это дает уверенность в том, что Ваше лечение будет проведено чистыми стерильными, абсолюно не подвергающими опасности Ваше здоровье инструментами.</p>
+                        </div>
+                        <div class="accordion__item flex">
+                            <input type="radio" name="accordion">
+                            <p class="accordion__title">Специалисты с многолетним опытом</p>
+                            <p class="accordion__text">В нашем штате: профессор, кандидаты медицинских наук, врачи Высшей и Первой категории.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
+
+        <section class="modal hide">
+          </section>
     </main>
 </body>
+
 </html>

@@ -1,0 +1,108 @@
+.header {
+    position: relative;
+    height: 73px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    z-index: 3;
+    padding: 20px 0px;
+    width: 100%;
+    background: var(--background__body);
+
+    &__list {
+        display: flex;
+        gap: 44px;
+        align-items: center;
+    }
+
+    &__btn-menu {
+        width: 40px;
+        height: 40px;
+        appearance: none;
+        display: none;
+
+        &:after,
+        &::before {
+            content: "";
+            height: 4px;
+            background: #616161;
+            display: block;
+            transform-origin: left;
+            transition: .25s linear;
+        }
+
+        &:after {
+            box-shadow: 0px -16px 0px 0px #616161;
+            margin-top: 28px;
+        }
+    }
+
+    &__btn-menu:checked {
+
+        &:after,
+        &::before {
+            width: 47px;
+        }
+
+        &::before {
+            transform: rotate(43deg);
+        }
+
+        &::after {
+            box-shadow: 0px 0px 0px 0px #616161;
+            transform: rotate(-43deg);
+        }
+
+        &~.nav__list {
+            left: 0;
+        }
+    }
+
+    &_shadow{
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        background: var(--background__dark);
+        color: var(--color__light);
+        position: absolute;
+        left: -20px;
+        top: 0;
+        width: 0vw;
+        height: 100vh;
+        font-size: 50px;
+        padding-right: 9px;
+    }
+
+    @media (max-width:1043px) {
+        &__btn-menu {
+            display: block;
+        }
+
+        &__list {
+            flex-direction: column;
+            align-items: flex-start;
+            background: var(--background__body);
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: -280px;
+            transition-duration: .25s;
+            padding: 30px;
+            overflow: scroll;
+        }
+
+        &_shadow{
+            display: flex;
+        }
+        &__btn-menu:checked{
+            &~.nav_shadow{
+                width: 98vw;
+            }
+        }
+    }
+}
